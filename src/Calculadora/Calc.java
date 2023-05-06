@@ -83,9 +83,9 @@ public class Calc {
 			System.out.print("\n\nPrecione qualquer tecla para continuar...");
 			System.in.read();
 			if (System.getProperty("os.name").contains("Windows"))
-	            new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
-	        else
-	            Runtime.getRuntime().exec("clear");
+	            		new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+	        	else
+	            		Runtime.getRuntime().exec("clear");
 		}
 		input.close();
 	}
