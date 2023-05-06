@@ -71,7 +71,11 @@ public class Calc {
 				}
 				break;
 			case 5:
-				System.out.print("O resultado do resto da divisão inteira é: " + c.resto(num1, num2));
+				if (num2 == 0) {
+					System.out.print("Não é possível dividir por zero!");
+				} else {
+					System.out.print("O resultado do resto da divisão inteira é: " + c.resto(num1, num2));
+				}	
 				break;
 			case 6:
 				sair = 1;
