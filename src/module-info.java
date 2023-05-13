@@ -5,5 +5,5 @@
  * @author lucas
  *
  */
-module Calculadora {
+module calculadora {
 }

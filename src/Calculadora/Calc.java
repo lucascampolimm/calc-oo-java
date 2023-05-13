@@ -1,6 +1,7 @@
-package Calculadora;
+package calculadora;
 
 import java.io.IOException;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Calc {
@@ -41,6 +42,7 @@ public class Calc {
 
 		Calc c = new Calc();
 		int num1 = 0, num2 = 0, sair = 0, op;
+		Locale.setDefault(Locale.US);
 		Scanner input = new Scanner(System.in);
 
 		while (sair == 0) {
@@ -79,7 +81,6 @@ public class Calc {
 				break;
 			case 6:
 				sair = 1;
-				input.close();
 				System.out.print("\nVocê saiu do programa!");
 				return;
 			default:
